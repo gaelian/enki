@@ -34,6 +34,10 @@
       <small>Name or <%= link_to 'OpenID', 'http://openidexplained.com/' %> (required)</small>
     </p>
     <p>
+      <%= text_field_tag 'email' %>
+      <label for="email" id="email_label"><small>Email</small></label>
+    </p>
+    <p>
       <%= form.text_area 'body' %><br/>
       <small>(<%= link_to 'lesstile enabled', 'http://lesstile.rubyforge.org' %> - surround code blocks with ---)</small>
     </p>
